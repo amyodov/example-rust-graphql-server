@@ -5,4 +5,16 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[profile.dev]
+
+[profile.release]
+strip = true
+lto = true
+
 [dependencies]
+actix-cors = "0.6"
+actix-web = "4.4"
+actix-web-lab = "0.19"
+env_logger = "0.10"
+juniper = "0.15"
+log = "0.4"
